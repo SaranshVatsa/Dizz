@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     <b> Plese upload your private key file(Format : .json)</b>
+    <input type="file" name="creds">
+    <button type="submit">Sign in</button>
+  </form>
+{% if status == False %}
+    <b>Invalid Credentials</b>
+{% endif %}
+  <p><a href="{% url 'root' %}">Return to home</a></p>
+{% endblock %}
+

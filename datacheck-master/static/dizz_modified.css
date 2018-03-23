@@ -1,0 +1,155 @@
+
+
+.cnt_li{
+    width: 120px;
+    height: 120px;
+    float:left;
+}
+
+summary {
+    outline: none;
+}
+
+header {
+    background-color: rgb(8, 8, 70);
+    height: 80px;
+    box-shadow: 0 0 4px 5px grey;
+    margin-bottom: 20px;
+}
+
+.the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #202020;
+    box-sizing: border-box;
+}
+.the-fieldset {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
+}
+
+.left-menu {
+    display: inline-block;
+    width: 370px;
+    background: rgb(202, 202, 202);
+    padding: 17px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.foot {
+    height: 80px;
+    background: rgb(218, 218, 218);
+    position: relative;
+}
+
+.foot h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#sda {
+    background: red;
+    width: 100%;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    position: relative;
+    color: white;
+}
+
+.intro-content {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 30px;
+}
+
+.intro img {
+    display: block;
+}
+
+.intro h3 {
+    display: block;
+}
+
+.intro h3:hover {
+    color: goldenrod;
+}
+
+.menu {
+    color: white;
+    position: absolute;
+    top: 26px;
+    right: 40px;
+}
+
+.menu ul {
+    display: inline;
+}
+
+.menu li {
+    display: inline;
+    padding: 20px;
+}
+.menu li:hover {
+    color: goldenrod;
+}
+
+.green {
+    color: green;
+}
+
+.navy {
+    color: navy;
+}
+
+.blue {
+    color: blue;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-12 h2 {
+    text-align: center;
+    color: rgb(23, 9, 61);
+}
+
+.list-group-item {
+    padding: 20px;
+}
+
+.list-group-item:hover {
+    background: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.dark-red {
+    color: rgb(134, 15, 15);
+}
+
+fieldset span:hover {
+    cursor: pointer;
+}

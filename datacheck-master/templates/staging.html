@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "style.css"%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/jpeg" href='{% static "Icon/logo.png" %}'>
+
+    <title>Dashboarding Product | DizzData</title>
+  </head>
+  <body>
+
+    <section class="sec point" id="sec1">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="dropdown">
+                    <div class="point-center">
+                        <button type="button" id="drop" class="btn dropdown-toggle" data-toggle="dropdown">
+                            Games
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="point-center">
+                    <button type="submit" class="btn refresh" title="Refresh">
+                        Run Query
+                        <i id="refresh" class="fa fa-refresh"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                    <div class="dropdown">
+                        <div class="point-center">
+                            <button type="button" id="drop" class="btn dropdown-toggle" data-toggle="dropdown">
+                                Connect to Database
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">BigQuery</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec" id="sec2">
+        <div class="row">
+            <div id="sec1-sql" class="col-md-2 col-sm-2">
+                <div class="aside">
+                    <ul class="list-group">
+                        <a href=""><li class="list-group-item active">DAU </li></a>
+                        <a href=""><li class="list-group-item">Retention(D1, D7, D14)</li></a>
+                        <a href=""><li class="list-group-item">Revenue (By country, OS, etc.)</li></a>
+                        <a href=""><li class="list-group-item">Staging Area</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="sec2-sql" class="col-md-5 col-sm-5">
+                <div class="main">
+                    <div class="coding">
+                        <i id="close-sql" class="fa fa-arrow-left" alt="close" title="Shrink"></i>
+                        <div class="container">
+                                <label for="area" style="margin-top: 5px;">Coding Ground:</label>
+                                <div class="form-group">
+                                        <textarea class="form-control z-depth-1" id="area" placeholder="Enter your queries here.">
+
+                                        </textarea>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sec3-sql" class="col-md-5 col-sm-5">
+                <div class="main1">
+                    <div class="container">
+                            <div class="image">
+                                    <i id="close" class="fa fa-close" alt="close" title="close"></i>
+                                    <img class="image-in-images" src='{% static "Images/img1.png"  %}' class="mx-auto">
+                            </div><hr><br>
+                        <div class="image">
+                                <i id="close" class="fa fa-close" alt="close" title="close"></i>
+                                <img class="image-in-images" src='{% static "Images/img2.png"  %}' class="mx-auto">
+                        </div><hr><br>
+                        <div class="image">
+                                <i id="close" class="fa fa-close" alt="close" title="close"></i>
+                                <img class="image-in-images" src='{% static "Images/img3.png"  %}' class="mx-auto">
+                        </div>                     
+                    </div>
+                </div>
+            </div>  
+
+
+
+        <!--    <div id="sec3-sql" class="col-md-5 col-sm-5">
+                <div class="main1">
+                    <div class="container">
+                        <div class="image">
+                            <i id="close" class="fa fa-close" alt="close" title="close"></i>
+                            <img class="image-in-images" src="Images/Charts_image_series.png" class="mx-auto">
+                        </div><hr><br>
+                        <div class="image">
+                                <i id="close" class="fa fa-close" alt="close" title="close"></i>
+                                <img class="image-in-images" src="Images/Charts_series_regions.png" class="mx-auto">
+                        </div><hr><br>
+                        <div class="image">
+                                <i id="close" class="fa fa-close" alt="close" title="close"></i>
+                                <img class="image-in-images" src="Images/1490861424_783_the-worst-or-the-best-smashing-magazine.png" class="mx-auto">
+                        </div>                     
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section class="sec" id="sec3">
+        <div class="row">
+            <div class="col-md-9 col-sm-9">
+                <div class="buttons">
+                        <button type="button" class="btn btn-danger">Show Email Aerts</button>
+                    </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="buttons">
+                    <button type="button" class="btn btn-danger">Show Anamalies</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  </body>
+</html>

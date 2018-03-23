@@ -1,0 +1,138 @@
+header {
+    height: 40px;
+    width: auto;
+}
+
+body {
+    background: rgb(233, 233, 233);
+    width: 100%;    
+}
+
+#sec1 {
+    background: rgb(8, 146, 70);
+    width: 100%;
+    box-shadow: 0px 0px 3px 3px grey;
+}
+
+.row {
+    width: 100%;
+}
+
+#sec1, #sec2, #sec3 {
+    position: relative;
+} 
+
+.btn {
+    margin: auto !important;
+}
+
+#sec1 {
+    width: 100%;
+    height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    #sec1 {
+        height: 100px;
+    }
+}
+
+.point {
+    display: flex;
+    align-items: center;
+}
+
+.point-center {
+    display: flex;
+    justify-content: center;
+} 
+
+/* #refresh {
+    font-size: 48px;color: rgb(192, 192, 192);
+} */
+
+
+#refresh:hover {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.aside {
+    background: white;
+    margin: 40px 5px 40px 20px;
+}
+
+.main {
+    margin: 40px 0px;
+    background: white;
+    height: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main1 {
+    margin: 40px 0px;
+    background: white;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+#sec2 .row {
+    min-height: 500px;
+}
+
+.buttons {
+    margin: 80px 40px;
+}
+
+.image-in-images {
+    width: inherit;
+}
+
+.image {
+    width: inherit;
+    position: relative;
+    padding: 20px 30px 0 0;
+}
+
+#close, #close-sql {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    color: grey;
+}
+
+#close:hover, #close-sql:hover {
+    color: red;
+    transition-duration: 0.5s;
+}
+
+.email-alerts {
+    width: 100%;
+    height: 35px;
+    margin: 80px 40px;
+    background: yellow;
+}
+
+#text {
+    font-size: 20px;
+}
+
+textarea {
+    min-height: 750px;
+    padding: -10px;
+    margin-top: 10px;
+}
+
+.options button {
+    width: 100%;
+}
+
+.options .dropdown-menu {
+    width: 90%;
+}
+
+.options .dropdown-item {
+    width: 100%;
+}
