@@ -10,8 +10,8 @@ django = "*"
 gunicorn = "*"
 django-heroku = "*"
 
-django-storages = "1.6.5"
-boto="2.48.0"
+django-storages
+boto
 
 
 [requires]
